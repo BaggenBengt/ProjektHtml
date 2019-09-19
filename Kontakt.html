@@ -10,39 +10,31 @@
   <body>
    
     <!-- Sida 599-->
-<div class="formularContainer">
-    <form>
-    <div class="fornamn">
-    <lable for="fornamn" class="behovs">Förnamn:</lable>
-    <input type="text" placeholder="Skriv in ditt förnamn" name="fornamn" id="fornamn" required title="Snälla skriv in ditt namn">
-    
-    </div>
-    <div class="efternamn">
-    <lable for="efternamn" class="behovs">Efternamn:</lable>
-    <input type="text" placeholder="Skriv in ditt efternamn" name="efternamn" id="efternamn" required title="Snälla skriv in ditt namn">
-            
-    </div>
-    <div class="email">
-    <lable for="email" class="behovs">E-postadress:</lable>
-    <input type="email" placeholder="din@e-postadress.nu" name="email" id="email">
 
-    </div>
-    <div class="tel">
-    <lable for="tel" class="behovs">Telefonummer:</lable>
-    <input type="tel" placeholder="012-3456789" name="tel" id="tel">
+    <div id="kontaktHuvudDiv">
+       
+        <form id="kontaktForm">
+        <h3>Kontakta oss:</h3>
 
-    </div>
-    <div class="meddelande">
-    <lable for="meddelande" class="behovs">Meddelande (max 100 tecken):</lable>
-    <textarea name="meddelande" id="meddelande" rows="5" cols="30"></textarea>
+        <label for="fornamn">Förnamn: </label>
+        <input type="text" id="fornamn" placeholder="Ange ditt förnamn"/>
 
-    </div>
-    <div class="submit">
-    <input type="submit" value="Skicka">
-    </div>
-    </form>
-    
-</div>
+        <label for="efternamn">Efternamn: </label>
+        <input type="text" id="efternamn" placeholder="Ange ditt efternamn"/>
+
+        <label for ="email">E-postadress: </label>
+        <input type="email" id="email" placeholder="Din@e-postadress.nu"/>
+
+        <label for ="tel">Telefonummer:</label>
+        <input type="tel" id="tel" placeholder="10 siffrigt mobilnummer"/>
+
+        <label for="meddelande">Meddelande:</label>
+        <textarea row="5" cols="25" id="meddelande" placeholder="Meddelande.."></textarea>
+
+        <input type="button" id="submit" value="Skicka"/>
+        </form>
+       
+     </div>
 
 
       
