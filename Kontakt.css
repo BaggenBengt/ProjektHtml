@@ -1,0 +1,41 @@
+    .formularContainer{
+        height: auto;
+        width: 33%;
+        margin-top: 5%;
+        margin-left: 33%;
+        background-color: grey;    
+    }
+
+    input {
+        padding: 1em;
+        border: none; 
+        margin-bottom: 1.2em;
+        font-size: 1.2em;
+        line-height: 1em;
+    }
+    
+    #fornamn,
+    #efternamn,
+    #email,
+    #tel,
+    #meddelande{
+        box-shadow: inset 0 0.1em 0.1em black;
+        outline: 0;
+    }
+
+    .fornamn,
+    .efternamn,
+    .email,
+    .tel{
+        width: 90%;
+        margin-left: 10%;
+    }
+    .meddelande{
+        margin-left: 10%
+    }
+
+    textarea{
+        resize: none;
+        font-size: 1.2em;
+        height: auto;
+    }
