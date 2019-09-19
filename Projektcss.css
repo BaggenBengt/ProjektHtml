@@ -113,9 +113,15 @@ overflow: auto;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         text-align: center;
+       opacity: 0;
         
       }
 
-      .overlay:hover.overlay { /* Gör texten synlig när man hovrar över loggan*/
+    .textOverlay:hover   { /* Gör texten synlig när man hovrar över loggan*/
         opacity: 1;
-    }
+        
+    }  
+    .overlay:hover{
+        opacity: 1;        /* Gör texten synlig när man hovrar över loggan, 
+                            annars syns texten då man backa från en sida*/
+    } 
