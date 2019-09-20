@@ -24,19 +24,19 @@ function bytBild(){
     var image = document.getElementById("imgBildSpel");
     if(image.src.match("bild1.jpg")){
     image.src = "bild2.jpg";
-    document.getElementById("bildid2").style.backgroundColor = '#3b3a3a8f';
-    document.getElementById("bildid1").style.backgroundColor = 'black';
+    document.getElementById("nav2").style.backgroundColor = '#3b3a3a8f';
+    document.getElementById("nav1").style.backgroundColor = 'black';
     
     }
     else if (image.src.match("bild2.jpg")){
     image.src = "bild3.jpg";
-    document.getElementById("bildid3").style.backgroundColor = '#3b3a3a8f';
-    document.getElementById("bildid2").style.backgroundColor = 'black';
+    document.getElementById("nav3").style.backgroundColor = '#3b3a3a8f';
+    document.getElementById("nav2").style.backgroundColor = 'black';
     }
     else{
     image.src = "bild1.jpg";
-    document.getElementById("bildid3").style.backgroundColor = 'black';
-    document.getElementById("bildid1").style.backgroundColor = '#3b3a3a8f';
+    document.getElementById("nav3").style.backgroundColor = 'black';
+    document.getElementById("nav1").style.backgroundColor = '#3b3a3a8f';
     }
     }
 
