@@ -6,7 +6,7 @@
 
 #kontaktForm{
     width: 25%;
-    height: 60%;
+    height: auto;
     border-radius: 1em;
     padding: 3%;
     box-shadow: 0 0 0.2em;
@@ -45,7 +45,7 @@ h3{
 
 textarea {
     resize: none;
-    height: 20%;
+    height: 30%;
     display: block;
     margin-left: 7%;
     width: 100%;
