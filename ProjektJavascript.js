@@ -3,15 +3,16 @@ $(document).ready(function(){
 
 $('#spelaBildspel').click(function(){
     var namn = $('#spelaBildspel').val();
-    if (namn == "Starta bildspelet"){
+    if (namn == " "){
     tid = setInterval("bytBild()", 1000);
 
-    $('#spelaBildspel').val("Pausa bildspelet");
+    $('#spelaBildspel').val("  ");
+    $("#spelaBildspel").css("background-image", "url('pause.jpg')");
 }
-     if (namn == "Pausa bildspelet"){
+     if (namn == "  "){
     clearInterval(tid);
-    $('#spelaBildspel').val("Starta bildspelet");
-    
+    $('#spelaBildspel').val(" ");
+    $("#spelaBildspel").css("background-image", "url('play.jpg')");
      }
     });
     //Startar och stänger av Timern <----
