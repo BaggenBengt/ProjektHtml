@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-    <html>
-        <head lang="sv">
-        <meta charset="utf-8">
-        <title>Start sida</title>
-        <link rel="stylesheet" href="Projektcss.css">
-        </head>
-            <body>
-                <div id="menybar">
+<html>
+    <head>
+        <link rel="stylesheet" href="test.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> </title>
+    </head>
+    <body>
+            <div id="menybar">
                     <ul id="menyLista">
                         <li class="lista"><a href="ProjektStart.html">Startsida</a></li>
                         <li class="lista"> <a href="ProjektPortfolio.html">Portfolio</a></li>
@@ -14,34 +14,35 @@
                         <li class="lista">Om oss</li>
                         
                     </ul>
-                </div>
-                <div id="portfolio">
+                </div>   
+            <div id="portfolio">
                    
-                    <div id="topPortfolio"> 
+                        <div id="topPortfolio"> 
+                            
+                            <img class="bilderPortfolio" id= "spotify" src="spotify3.jpg"   alt="Spotify logo">  
+                            <p id= "spotifyText" class="textPortfolio">Spotify Technology S.A. is a Swedish media-services provider founded in 2006. The company's primary business is its audio streaming platform that provides DRM-protected music and podcasts from record labels and media companies.</p> 
+                            <div id="overlaySpotify" class="overlay">
+                                    <div class="textOverlay">Click Me</div>
+                                </div>
+                            
                         
-                        <img class="bilderPortfolio" id= "spotify" src="spotify3.jpg"   alt="Spotify logo">  
-                        <p id= "spotifyText" class="textPortfolio">Spotify Technology S.A. is a Swedish media-services provider founded in 2006. The company's primary business is its audio streaming platform that provides DRM-protected music and podcasts from record labels and media companies.</p> 
-                        <div id="overlaySpotify" class="overlay">
-                            <div class="textOverlay">Click Me</div>
                         </div>
                         
-                    
-                    </div>
-                    
+    
+                        <div id="bottomPortfolio">
+                            <img class="bilderPortfolio" id="chrome" src="chrome.jpg" alt="Chrome logo">
+                            <p id="chromeText" class="textPortfolio">Google Chrome is a cross-platform web browser developed by Google. It was first released in 2008 for Microsoft Windows, and was later ported to Linux, macOS, iOS, and Android. The browser is also the main component of Chrome OS, where it serves as the platform for web apps.</p>
+                            <div id="overlayChrome" class="overlay">
+                                    <div class="textOverlay">Click Me</div>
+                                </div>
+                            
+                       
+    
+                    </div>  
 
-                    <div id="bottomPortfolio">
-                        <img class="bilderPortfolio" id="chrome" src="chrome.jpg" alt="Chrome logo">
-                        <p id="chromeText" class="textPortfolio">Google Chrome is a cross-platform web browser developed by Google. It was first released in 2008 for Microsoft Windows, and was later ported to Linux, macOS, iOS, and Android. The browser is also the main component of Chrome OS, where it serves as the platform for web apps.</p>
-                       <div id="overlayChrome" class="overlay">
-                           <div class="textOverlay">Click Me</div>
-                       </div>
-                        
-                   
 
-                </div>  
+                    <script type ="text/javascript" src="https://code.jquery.com/jquery-latest.js"> </script>
+                    <script type= "text/javascript" src="ProjektJavascript.js"></script>
 
-                <script type ="text/javascript" src="https://code.jquery.com/jquery-latest.js"> </script>
-                <script type= "text/javascript" src="ProjektJavascript.js"></script>
-                  
-            </body>
-    </html>
+    </body>
+</html>
