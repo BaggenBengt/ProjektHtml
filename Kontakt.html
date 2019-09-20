@@ -4,48 +4,39 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kontakt</title>
-<script src ="ProjektJavascript.js" ></script>
 <link rel="stylesheet" href="Projektcss.css">
 <link rel="stylesheet" href="Kontakt.css">
 </head>
   <body>
-
-    <div id="menybar">
-      <ul id="menyLista">
-          <li class="lista">Startsida</li>
-          <li class="lista">Portfolie</li>
-          <li class="lista">Projekt</li>
-          <li class="lista">Om oss</li>
-      </ul>
-    </div>
+    
     <div id="kontaktHuvudDiv">
        
         <form id="kontaktForm">
         <h3>Kontakta oss:</h3>
 
-        <label for="fornamn">Förnamn: </label>
-        <input type="text" id="fornamn" placeholder="Ange ditt förnamn"/>
-
-        <label for="efternamn">Efternamn: </label>
-        <input type="text" id="efternamn" placeholder="Ange ditt efternamn"/>
+        <label for="namn">Namn: </label>
+        <input type="text" id="namn" placeholder="Ange ditt namn"/>
+        <span class="hide" id="spanNamn"></span>
 
         <label for ="email">E-postadress: </label>
         <input type="email" id="email" placeholder="Din@e-postadress.nu"/>
+        <span class="hide" id="spanEmail"></span>
 
         <label for ="tel">Telefonummer:</label>
         <input type="tel" id="tel" placeholder="10 siffrigt mobilnummer"/>
+        <span class="hide" id="spanTel"></span>
 
-        <label for="meddelande">Meddelande: (max 100 tecken)</label>
+        <label for="meddelande">Meddelande:</label>
         <textarea id="meddelande" placeholder="Meddelande.."></textarea>
+        <span class="hide" id="spanMeddelande"></span>
 
         <input type="button" id="submit" value="Skicka"/>
         </form>
        
      </div>
-
-
-      
   </body>
 
+  <script src ="ProjektJavascript.js" ></script>
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
 
 </html>
