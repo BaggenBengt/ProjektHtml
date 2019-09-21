@@ -72,9 +72,16 @@ textarea {
 }
 
 span{
-    margin-bottom: 5%;
+    margin-top: 0;
+    color: red;
+    font-weight: bold;
+}
+
+.hideForm{
+    visibility: hidden;
 }
 
 input{
     margin-bottom: 0%;
 }
+
