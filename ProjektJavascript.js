@@ -1,10 +1,12 @@
+$(document).ready(function(){
+    submitToggle();
+})
 
 $(document).on('change',function(){
     validEmail();
     validNamn();
     //validTel();
-    submitToggle();
-    
+    //validMeddelande();
 });
 
 
@@ -36,12 +38,14 @@ function validNamn(){
         var valid= false;
               
  if(!/^(\w+\S+)$/.test($(this).val()) || $(this).val().length < 3 ){
-     valid = false;
      $('#spanNamn').removeClass('hideForm');
+     valid = false;
+     submitToggle();
      }
  else{
      $('#spanNamn').addClass('hideForm');
      valid = true;
+     submitToggle();
  }
  return valid;
  });
@@ -54,12 +58,14 @@ function validEmail(){
            
            
     if(!/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i.test($(this).val())){
-        valid = false;
         $('#spanEmail').removeClass('hideForm');
+        valid = false;
+        submitToggle();
         }
     else{
         $('#spanEmail').addClass('hideForm');
         valid = true;
+        submitToggle();
     }
     return valid;
     });
