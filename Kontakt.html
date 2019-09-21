@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src ="ProjektJavascript.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kontakt</title>
@@ -12,31 +14,36 @@
     <div id="kontaktHuvudDiv">
        
         <form id="kontaktForm">
-        <h3>Kontakta oss:</h3>
+        <h3 id="h3Kontakt">Kontakta oss:</h3>
 
         <label for="namn">Namn: </label>
         <input type="text" id="namn" placeholder="Ange ditt namn"/>
-        <span class="hideForm" id="spanNamn">Skriv in ditt namn!</span><br>
+        <span class="hideForm" id="spanNamn">Fel angivet namn</span><br>
 
         <label for ="email">E-postadress: </label>
         <input type="email" id="email" placeholder="Din@e-postadress.nu"/>
-        <span class="hideForm" id="spanEmail"></span><br>
+        <span class="hideForm" id="spanEmail">Ange en korrekt e-postadress!</span><br>
 
         <label for ="tel">Telefonummer:</label>
         <input type="tel" id="tel" placeholder="10 siffrigt mobilnummer"/>
-        <span class="hideForm" id="spanTel"></span><br>
+        <span class="hideForm" id="spanTel">Ange ett korrekt nummer</span><br>
 
         <label for="meddelande">Meddelande:</label>
         <textarea id="meddelande" placeholder="Meddelande.."></textarea>
         <span class="hideForm" id="spanMeddelande"></span><br>
 
-        <input type="button" id="submit" value="Skicka"/>
+        <input class="disabled" type="button" id="submit" value="Skicka"/>
+
+        <iframe id="karta" src="https://maps.google.com/maps?q=%C3%B6rebro%20uni&t=k&z=15&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+          
         </form>
-       
+        
+        
+
      </div>
   </body>
 
-  <script src ="ProjektJavascript.js" ></script>
-  <script src="https://code.jquery.com/jquery-latest.js"></script>
+
 
 </html>

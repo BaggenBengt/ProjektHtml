@@ -10,10 +10,11 @@
 #kontaktForm{
     width: 100%;
     height: auto;
-    border-radius: 1em;
+    border-radius: 0;
     padding: 0%;
     box-shadow: 0 0 0.2em;
     float: left;
+    padding-top: 1%;
     
     background-color: rgba(143, 144, 146, 0.555);
 }
@@ -23,8 +24,19 @@
         margin-left: 34.5%;
         margin-top: 1%;
         padding: 2%;
+        border-radius: 1em;
     }
     
+}
+
+#karta{
+    border:none;
+    margin-top: 13%;
+    display: block;
+    margin-left: 7%;
+    width: 81%;
+    margin-bottom: 5%;
+    height: 13em;
 }
 
 label,
@@ -43,14 +55,22 @@ span
     margin-right: 12%;
     width: 81%;
     width: auto;
-    background-color: white;
+    background-color: rgba(115, 185, 115, 0.815);
+    font-weight: bold;
+
 }
 
 #submit:hover{
     background-color: green;
 }
 
-h3{
+#h3Hitta{
+    text-align: left;
+    margin-top: 0;
+    color: white;
+}
+
+#h3Kontakt{
     text-align: center;
     margin-top: 0;
     color: white;
@@ -71,17 +91,23 @@ textarea {
     margin-bottom: 0%;
 }
 
-span{
+span {
     margin-top: 0;
     color: red;
     font-weight: bold;
 }
 
-.hideForm{
+.hideForm {
     visibility: hidden;
 }
 
-input{
+input {
     margin-bottom: 0%;
+}
+
+#submit.disabled, #submit.disabledn:hover {
+    background-color: red;
+    pointer-events: none;
+    
 }
 
