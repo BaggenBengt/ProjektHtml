@@ -1,6 +1,6 @@
 $(document).ready(function(){
         
-        $("#hej").load("test.html"); 
+        $("#bigFrame").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/ProjektPortfolio.html"); 
     
       
    
