@@ -1,5 +1,8 @@
 $(document).ready(function(){
-
+        
+        $("#hej").load("test.html"); 
+    
+      
    
 
     $("#overlaySpotify").click(function(){
