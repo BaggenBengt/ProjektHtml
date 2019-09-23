@@ -1,9 +1,13 @@
 $(document).ready(function(){
         
-        $("#bigFrame").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/ProjektPortfolio.html"); 
-    
-      
-   
+    $("#profilBildEtt").click(function(){
+     $("#bottom").empty();
+     $("#profilBildTva").hide();
+     $("#profilBildTre").hide();
+     
+
+
+    }) 
 
     $("#overlaySpotify").click(function(){
         $("#spotifyText").fadeIn(1500);
