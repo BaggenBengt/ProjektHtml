@@ -1,75 +1,110 @@
 $(document).ready(function(){
-    submitToggle();
-})
-
-$(document).on('change',function(){
-    validEmail();
-    validNamn();
-    //validTel();
-    //validMeddelande();
+    formValidate();
 });
+
+$(document).keyup(function(){
+
+    formValidate();  
+    
+  
+  
+    /*  if($('#namn').is(':focus')){
+              validNamn();
+                  
+      }
+      if ($('#email').is(':focus')) {
+              validEmail();
+      }
+      //validEmail();
+      //validTel();
+      //validMeddelande();*/
+  });
+
+
+
 
 
 function formValidate(){
-
-    var validForm = false;
     
-    if(validNamn() && validEmail() && validTel() && validMeddelande()){
-        validForm = true;
+    var validNamn = false;
+    var validEmail = false;
+
+    
+      // /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/g   /^(\w+\S+)$/
+    if(/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/g.test($('#namn').val()) || ($('#namn').val().length >= 4 )){
+    validNamn = true;
+    $('#spanNamn').addClass('hideForm');
     }
-    else {
-        validForm = false;
+
+     if (!/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/g.test($('#namn').val()) && ($('#namn').val().length <= 2 )){
+        validNamn = false;
+        $('#spanNamn').removeClass('hideForm');
+        }
+        
+    if(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i.test($('#email').val())){
+        $('#spanEmail').addClass('hideForm');
+        valid = true;
+        }
+    if (!/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i.test($('#email').val())){
+        $('#spanEmail').removeClass('hideForm');
+        valid = false;
+        }
+    if (validNamn && validEmail){
+        $('#submit').removeClass('disabled');
     }
-    return validForm;
+    if (!validNamn && !validEmail){
+        $('#submit').addClass('disabled');
+    }
 }
 
-function submitToggle(){
+/*function submitToggle(){
     if(formValidate()){
         $('#submit').removeClass('disabled');
     }
     else {
         $('#submit').addClass('disabled');
     }
-}
+}*/
 
-function validNamn(){
+/*function validNamn(){
 
-    $('#namn').keyup(function(){
         var valid= false;
-              
- if(!/^(\w+\S+)$/.test($(this).val()) || $(this).val().length < 3 ){
+        $('#namn').keyup(function(){
+ if(!/^(\w+\S+)$/.test($('#namn').val()) || $('#namn').val().length < 3 ){
      $('#spanNamn').removeClass('hideForm');
      valid = false;
-     submitToggle();
+     //submitToggle();
      }
  else{
      $('#spanNamn').addClass('hideForm');
      valid = true;
-     submitToggle();
+    // submitToggle();
  }
  return valid;
  });
-}
+} */
 
-function validEmail(){
 
+/*function validEmail(){
+
+    var valid= false;
     $('#email').keyup(function(){
-           var valid= false;
+           
            
            
     if(!/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i.test($(this).val())){
         $('#spanEmail').removeClass('hideForm');
         valid = false;
-        submitToggle();
+       // submitToggle();
         }
     else{
         $('#spanEmail').addClass('hideForm');
         valid = true;
-        submitToggle();
+       // submitToggle();
     }
     return valid;
     });
-}
+} */
 
 
 /*
@@ -90,7 +125,4 @@ function validTel(){
  });
 }*/
 
-function validMeddelande(){
-    
-
-    }
+//function validMeddelande(){}

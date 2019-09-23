@@ -13,16 +13,16 @@
     
     <div id="kontaktHuvudDiv">
        
-        <form id="kontaktForm">
+        <form id="kontaktForm" name ="kontaktForm">
         <h3 id="h3Kontakt">Kontakta oss:</h3>
 
         <label for="namn">Namn: </label>
-        <input type="text" id="namn" placeholder="Ange ditt namn"/>
-        <span class="hideForm" id="spanNamn">Fel angivet namn</span><br>
+        <input type="text" id="namn" name="namn" placeholder="Ange ditt namn"/>
+        <span class="hideForm" id="spanNamn">* Måste ange ett korrekt namn</span><br>
 
         <label for ="email">E-postadress: </label>
-        <input type="email" id="email" placeholder="Din@e-postadress.nu"/>
-        <span class="hideForm" id="spanEmail">Ange en korrekt e-postadress!</span><br>
+        <input type="email" id="email" name="email" placeholder="Din@e-postadress.nu"/>
+        <span class="hideForm" id="spanEmail">* Måste ange en korrekt e-postadress</span><br>
 
         <label for ="tel">Telefonummer:</label>
         <input type="tel" id="tel" placeholder="10 siffrigt mobilnummer"/>
