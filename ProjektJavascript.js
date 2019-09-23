@@ -4,7 +4,7 @@ $(document).ready(function(){
      $("#bottom").empty();
      $("#profilBildTva").hide();
      $("#profilBildTre").hide();
-     
+     $("#bottom").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/RobinPersonliga.html");     
 
 
     }) 
