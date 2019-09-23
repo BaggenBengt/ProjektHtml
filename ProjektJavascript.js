@@ -20,6 +20,20 @@ $('#spelaBildspel').click(function(){
 
 //Funktionen som byter bild! Den ska ligga utanför Document RDY funtionen annars blir den inte inläst!
 
+const navSlide = () =>{
+const burger = document.querySelector('.scrollLista');
+const nav = document.querySelector('.meny');
+
+burger.addEventListener('click',()=>{
+    nav.classList.toggle('meny-active');
+});
+}
+
+navSlide();
+
+
+
+
 function bytBild(){
    
     var image = document.getElementById("imgBildSpel");
