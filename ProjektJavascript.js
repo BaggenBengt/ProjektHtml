@@ -7,12 +7,12 @@ $('#spelaBildspel').click(function(){
     tid = setInterval("bytBild()", 1000);
 
     $('#spelaBildspel').val("  ");
-    $("#spelaBildspel").css("background-image", "url('pause.jpg')");
+    $("#spelaBildspel").css("background-image", "url('pause1.png')");
 }
      if (namn == "  "){
     clearInterval(tid);
     $('#spelaBildspel').val(" ");
-    $("#spelaBildspel").css("background-image", "url('play.jpg')");
+    $("#spelaBildspel").css("background-image", "url('play-button.png')");
      }
     });
     //Startar och stänger av Timern <----
