@@ -5,124 +5,61 @@ $(document).ready(function(){
 $(document).keyup(function(){
 
     formValidate();  
-    
-  
-  
-    /*  if($('#namn').is(':focus')){
-              validNamn();
-                  
-      }
-      if ($('#email').is(':focus')) {
-              validEmail();
-      }
-      //validEmail();
-      //validTel();
-      //validMeddelande();*/
   });
-
-
-
-
 
 function formValidate(){
     
     var validNamn = false;
     var validEmail = false;
+    var validTel = false;
+    var validMeddelande = false;
 
-    
-      // /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/g   /^(\w+\S+)$/
-    if(/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/g.test($('#namn').val()) || ($('#namn').val().length >= 4 )){
-    validNamn = true;
-    $('#spanNamn').addClass('hideForm');
-    }
+    if(/^[a-zA-Z]{3,}\s[a-zA-Z]{2,}$/.test($('#namn').val())){
+        validNamn = true;
+        $('#spanNamn').addClass('hideForm');
+        }
 
-     if (!/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/g.test($('#namn').val()) && ($('#namn').val().length <= 2 )){
+    if (!/^[a-zA-Z]{3,}\s[a-zA-Z]{2,}$/.test($('#namn').val())){
         validNamn = false;
         $('#spanNamn').removeClass('hideForm');
         }
         
-    if(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i.test($('#email').val())){
+    if(/^[^@]+@[^@]+.[^@]{2,3}/.test($('#email').val())){
         $('#spanEmail').addClass('hideForm');
-        valid = true;
+        validEmail = true;
         }
-    if (!/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i.test($('#email').val())){
+
+    if (!/^[^@]+@[^@]+.[^@]{2,3}/.test($('#email').val())){
         $('#spanEmail').removeClass('hideForm');
-        valid = false;
+        validEmail = false;   
         }
-    if (validNamn && validEmail){
+
+    if (/(\+?46|0)7\d{8}$/.test($('#tel').val())){
+        $('#spanTel').addClass('hideForm');
+        validTel = true;   
+        } 
+
+    if (!/^(\+?46|0)7\d{8}$/.test($('#tel').val())){
+        $('#spanTel').removeClass('hideForm');
+        validTel = false;   
+        } 
+
+    if (/^\w/.test(($('#meddelande').val()))){
+        $('#spanMeddelande').addClass('hideForm');
+        validMeddelande = true;
+        }
+
+    if (!/^\S+$/.test(($('#meddelande').val()))){
+        $('#spanMeddelande').removeClass('hideForm');
+        validMeddelande = false;
+        }
+
+    if (validNamn && validEmail && validTel && validMeddelande){
         $('#submit').removeClass('disabled');
-    }
-    if (!validNamn && !validEmail){
+        }
+
+    if (!validNamn || !validEmail ||!validTel ||!validMeddelande){
         $('#submit').addClass('disabled');
     }
 }
 
-/*function submitToggle(){
-    if(formValidate()){
-        $('#submit').removeClass('disabled');
-    }
-    else {
-        $('#submit').addClass('disabled');
-    }
-}*/
-
-/*function validNamn(){
-
-        var valid= false;
-        $('#namn').keyup(function(){
- if(!/^(\w+\S+)$/.test($('#namn').val()) || $('#namn').val().length < 3 ){
-     $('#spanNamn').removeClass('hideForm');
-     valid = false;
-     //submitToggle();
-     }
- else{
-     $('#spanNamn').addClass('hideForm');
-     valid = true;
-    // submitToggle();
- }
- return valid;
- });
-} */
-
-
-/*function validEmail(){
-
-    var valid= false;
-    $('#email').keyup(function(){
-           
-           
-           
-    if(!/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i.test($(this).val())){
-        $('#spanEmail').removeClass('hideForm');
-        valid = false;
-       // submitToggle();
-        }
-    else{
-        $('#spanEmail').addClass('hideForm');
-        valid = true;
-       // submitToggle();
-    }
-    return valid;
-    });
-} */
-
-
-/*
-function validTel(){
-    $('#tel').keyup(function(){
-        var valid= false;
-        
-        
- if(!//.test($(this).val())){
-     valid = false;
-     $('#spanTel').removeClass('hideForm');
-     }
- else{
-     $('#spanTel').addClass('hideForm');
-     valid = true;
- }
- return valid;
- });
-}*/
-
-//function validMeddelande(){}
