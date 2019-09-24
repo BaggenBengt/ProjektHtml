@@ -1,4 +1,4 @@
-/*$(document).ready(function(){
+$(document).ready(function(){
     getSparadForm();
     formValidate();
 });
@@ -7,7 +7,7 @@ $(window).unload(function(){
     sparaData();
 })
 
-$(document).keyup(function(){
+$(document).on('keyup keydown',function(){
 
     formValidate();  
   });
@@ -21,41 +21,49 @@ function formValidate(){
 
     if(/^[a-zA-Z]{3,}\s[a-zA-Z]{2,}$/.test($('#namn').val())){
         validNamn = true;
-        $('#spanNamn').addClass('hideForm');
+        $('#spanNamn').addClass('hideForm')
+        $('#namn').addClass('valid');
         }
 
     if (!/^[a-zA-Z]{3,}\s[a-zA-Z]{2,}$/.test($('#namn').val())){
         validNamn = false;
         $('#spanNamn').removeClass('hideForm');
+        $('#namn').removeClass('valid');
         }
         
     if(/^[^@]+@[^@]+.[^@]{2,3}/.test($('#email').val())){
         $('#spanEmail').addClass('hideForm');
+        $('#email').addClass('valid');
         validEmail = true;
         }
 
     if (!/^[^@]+@[^@]+.[^@]{2,3}/.test($('#email').val())){
         $('#spanEmail').removeClass('hideForm');
+        $('#email').removeClass('valid');
         validEmail = false;   
         }
 
     if (/(\+?46|0)7\d{8}$/.test($('#tel').val())){
         $('#spanTel').addClass('hideForm');
+        $('#tel').addClass('valid');
         validTel = true;   
         } 
 
     if (!/^(\+?46|0)7\d{8}$/.test($('#tel').val())){
         $('#spanTel').removeClass('hideForm');
+        $('#tel').removeClass('valid');
         validTel = false;   
         } 
 
     if (/^\w/.test(($('#meddelande').val()))){
         $('#spanMeddelande').addClass('hideForm');
+        $('#meddelande').addClass('valid');
         validMeddelande = true;
         }
 
     if (!/^\S+$/.test(($('#meddelande').val()))){
         $('#spanMeddelande').removeClass('hideForm');
+        $('#meddelande').removeClass('valid');
         validMeddelande = false;
         }
 
@@ -92,5 +100,5 @@ function getSparadForm(){
     $('#email').val(formSparad.email);
     $('#tel').val(formSparad.tel);
     $('#meddelande').val(formSparad.meddelande);
-} */
+}
 
