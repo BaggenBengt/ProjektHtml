@@ -29,21 +29,16 @@ $(document).ready(function(){
 
 
        $("#alla").click(function(){
+        $("#bottom").empty();
+        $("#bottom").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/ProjektOmoss.html #bottom");
         $("#alla").removeClass("fornamn"); 
         $("#mattias, #robin, #oskar").removeClass("selected");
         $("#mattias, #robin, #oskar").addClass("fornamn")
          $("#alla").addClass("selected"); 
-         $("#bakgrund").load("");
-
-
-
-
+         
        })
 
       
-
-
-
 
     $("#overlaySpotify").click(function(){
         $("#spotifyText").fadeIn(1500);

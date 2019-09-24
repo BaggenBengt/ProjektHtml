@@ -21,6 +21,7 @@
     width: 40%;
     margin: auto;
     margin-bottom: 10%;
+    border: solid 2px white;
 }
 
 #info{
@@ -33,6 +34,8 @@ justify-content: space-between;
 align-items: center;
 flex-direction: column;
 
+
+
 }
 
 #skillsEgen{
@@ -41,6 +44,7 @@ flex-direction: column;
     height: 100%;
     margin-top: 10%;
     margin-bottom: 10%;
+    border: solid 2px white;
     }
 
     #profilbild{
@@ -49,7 +53,75 @@ flex-direction: column;
         height: 30%;
         width: 20%;
         margin-top: 10%;
+        border: solid 2px white;
         
 
 
+    }
+
+#profildiv{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: solid 2px red;
+}
+
+#content{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: solid 2px  yellow;
+
+
+
+}
+
+    @media (min-width: 768px) {
+        
+        #info{
+            flex-direction: row;
+            height: 100%;
+        }
+
+        #content{
+            width: 50%;
+            height: 100%;
+
+        }
+
+        #profildiv{
+
+            width: 50%;
+            height:100%;
+        }
+
+
+        #skillsEgen{
+            width: 70%;
+            height: 40%;
+            margin: auto;
+       }
+
+       #profilbild{
+        margin: auto;
+        height: 50%;
+        width: 50%;
+       }
+
+       .ourText{
+       
+        margin-bottom: 20%;
+
+
+       }
     }
