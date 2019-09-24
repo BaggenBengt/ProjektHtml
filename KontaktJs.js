@@ -1,6 +1,10 @@
 $(document).ready(function(){
+    $('#kontaktForm').fadeOut(0);
+    $('#kontaktForm').slideDown(800);
     getSparadForm();
     formValidate();
+    skickat();
+    
 });
 
 $(window).unload(function(){
@@ -11,6 +15,7 @@ $(document).on('keyup keydown',function(){
 
     formValidate();  
   });
+
 
 function formValidate(){
     
