@@ -1,13 +1,16 @@
 $(document).ready(function(){
-         
-    $("#robin").click(function(){
-    $("#robin").removeClass("fornamn"); 
-    $("#mattias, #oskar, #alla").removeClass("selected");
-    $("#mattias, #oskar, #alla").addClass("fornamn")
+       
+
+    $("#robin").click(function(){                          
+    $("#robin").removeClass("fornamn");                     //Funktion för att få understruket namn
+    $("#mattias, #oskar, #alla").removeClass("selected");   // och loada ny profil på "Om oss" sidan
+    $("#mattias, #oskar, #alla").addClass("fornamn")        // Gäller 4 första funktionerna
      $("#robin").addClass("selected");   
      $("#bottom").empty();
      $("#bottom").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/RobinPersonliga.html");     
-    }) 
+     
+    })
+
 
     $("#mattias").click(function(){
         $("#bottom").empty();

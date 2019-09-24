@@ -21,7 +21,7 @@
     width: 40%;
     margin: auto;
     margin-bottom: 10%;
-    border: solid 2px white;
+ 
 }
 
 #info{
@@ -44,7 +44,7 @@ flex-direction: column;
     height: 100%;
     margin-top: 10%;
     margin-bottom: 10%;
-    border: solid 2px white;
+    
     }
 
     #profilbild{
@@ -53,8 +53,7 @@ flex-direction: column;
         height: 30%;
         width: 20%;
         margin-top: 10%;
-        border: solid 2px white;
-        
+       
 
 
     }
@@ -68,7 +67,7 @@ flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    border: solid 2px red;
+    
 }
 
 #content{
@@ -80,7 +79,7 @@ flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    border: solid 2px  yellow;
+    
 
 
 
@@ -107,20 +106,20 @@ flex-direction: column;
 
 
         #skillsEgen{
-            width: 70%;
-            height: 40%;
+            width: 90%;
+            height: 50%;
             
        }
 
        #profilbild{
         margin: auto;
-        height: 50%;
+        height: 60%;
         width: 50%;
        }
 
        .ourText{
         margin: auto;
-        margin-bottom: 20%;
+        
 
 
        }
