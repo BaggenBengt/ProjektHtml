@@ -11,6 +11,7 @@ height: 100%;
 
 
 nav{
+border-bottom: 2px inset white;
 display: flex;
 justify-content: space-around;
 align-items: center;
@@ -51,6 +52,40 @@ background-color: white;
 margin: 5px    
 }
 
+#bottom{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+#BildSpel{
+width: 100%;
+height: 60%;
+background-color: black;
+border-top: 2px inset white;
+}
+
+#imgBildSpel{
+width: 100%;
+height: 125%;
+border-bottom: 2px inset white;
+}
+
+#spelaBildspel{
+    background:url('play1.png') no-repeat;
+    background-size: 100% 100%;
+    cursor:pointer;
+    width: 100px;
+    height: 75px;
+    border: none;  
+    outline:none;
+    
+}
+
 @media screen and (max-width:768px){
 
     body{
@@ -59,32 +94,62 @@ margin: 5px
     .meny{
         position: absolute;
         right: 0%;
-        height: 100%;
+        height: 85%;
         width: 50%;
         top: 15%;
-        background-color: red;
+        background-color: black;
         display: flex;
         flex-direction: column;
         align-items: center;
         transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        transition: transform 0.7s ease-in;
+        border-left: 2px inset white;
         
         }
 
-        .meny li{
-            opacity: 0;
-        }
+
         .scrollLista{
             display: block;
             cursor: pointer;
         }
+
+        .meny li{
+        text-decoration: underline;
+        font-size: 200%;
+        
+        }
+
+        #bottom{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+
+        }
+        #BildSpel{
+            width: 100%;
+            height: 60%;
+            background-color: black;
+            margin-bottom: 5%;
+            }
+            
+            #imgBildSpel{
+            width: 100%;
+            height: 100%;
+            }
+
+
+
 }
+
+
+
+
 
 .meny-active{
     transform: translateX(0%);
 }
-
-
 
 
 

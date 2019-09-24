@@ -1,5 +1,5 @@
 $(document).ready(function(){
-//Startar och stänger av Timern ---->
+//Startar och stänger av Timern anropar även funktionen "bytBild()" ---->
 
 $('#spelaBildspel').click(function(){
     var namn = $('#spelaBildspel').val();
@@ -7,51 +7,57 @@ $('#spelaBildspel').click(function(){
     tid = setInterval("bytBild()", 1000);
 
     $('#spelaBildspel').val("  ");
+    $('#spelaBildspel').css('opacity', '0.3');
     $("#spelaBildspel").css("background-image", "url('pause1.png')");
 }
      if (namn == "  "){
     clearInterval(tid);
     $('#spelaBildspel').val(" ");
-    $("#spelaBildspel").css("background-image", "url('play-button.png')");
+    $('#spelaBildspel').css('opacity', '1');
+    $("#spelaBildspel").css("background-image", "url('play1.png')");
      }
     });
     //Startar och stänger av Timern <----
 });
 
-//Funktionen som byter bild! Den ska ligga utanför Document RDY funtionen annars blir den inte inläst!
 
-const navSlide = () =>{
-const burger = document.querySelector('.scrollLista');
-const nav = document.querySelector('.meny');
+
+
+ // För Hambugeren (navbaren) så att den slide in och slide ut. On click!
+function navSlide(){
+var burger = document.querySelector('.scrollLista');
+var nav = document.querySelector('.meny');
+
 
 burger.addEventListener('click',()=>{
     nav.classList.toggle('meny-active');
+
 });
+
 }
 
 navSlide();
 
 
 
-
+// Funktionen som byter själva bilden!
 function bytBild(){
    
     var image = document.getElementById("imgBildSpel");
     if(image.src.match("bild1.jpg")){
     image.src = "bild2.jpg";
-    document.getElementById("nav2").style.backgroundColor = '#3b3a3a8f';
-    document.getElementById("nav1").style.backgroundColor = 'black';
+  
     
     }
     else if (image.src.match("bild2.jpg")){
     image.src = "bild3.jpg";
-    document.getElementById("nav3").style.backgroundColor = '#3b3a3a8f';
-    document.getElementById("nav2").style.backgroundColor = 'black';
+    }
+    else if (image.src.match("bild3.jpg")){
+    image.src = "bild4.jpg";
     }
     else{
     image.src = "bild1.jpg";
-    document.getElementById("nav3").style.backgroundColor = 'black';
-    document.getElementById("nav1").style.backgroundColor = '#3b3a3a8f';
+   
     }
     }
 
