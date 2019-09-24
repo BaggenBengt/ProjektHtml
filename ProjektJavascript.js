@@ -7,12 +7,12 @@ $(document).ready(function(){
 
     $("#mattias").click(function(){
         $("#bottom").empty();
-        $("#bottom").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/RobinPersonliga.html");     
+        $("#bottom").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/MattiasPersonliga.html");     
        }) 
    
        $("#oskar").click(function(){
         $("#bottom").empty();
-        $("#bottom").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/RobinPersonliga.html");     
+        $("#bottom").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/OskarPersonliga.html");     
        }) 
 
 
