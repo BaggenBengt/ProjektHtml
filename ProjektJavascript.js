@@ -22,7 +22,6 @@ $('#spelaBildspel').click(function(){
 
 
 
-
  // För Hambugeren (navbaren) så att den slide in och slide ut. On click!
 function navSlide(){
 var burger = document.querySelector('.scrollLista');

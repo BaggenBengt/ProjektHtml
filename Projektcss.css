@@ -34,6 +34,11 @@ justify-content: space-around;
 .meny li{
 list-style: none; 
 }
+
+.meny a:hover{
+ color: red;   
+}
+
 .meny a{
 text-decoration: none;
 color: white;
@@ -150,9 +155,6 @@ border-bottom: 2px inset white;
 .meny-active{
     transform: translateX(0%);
 }
-
-
-
 
 
 @media screen and (max-width:1024px){
