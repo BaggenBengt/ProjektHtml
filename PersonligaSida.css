@@ -109,7 +109,7 @@ flex-direction: column;
         #skillsEgen{
             width: 70%;
             height: 40%;
-            margin: auto;
+            
        }
 
        #profilbild{
@@ -119,7 +119,7 @@ flex-direction: column;
        }
 
        .ourText{
-       
+        margin: auto;
         margin-bottom: 20%;
 
 
