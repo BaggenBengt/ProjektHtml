@@ -1,13 +1,25 @@
 $(document).ready(function(){
         
-    $("#profilBildEtt").click(function(){
+    $("#robin").click(function(){
      $("#bottom").empty();
-     $("#profilBildTva").hide();
-     $("#profilBildTre").hide();
      $("#bottom").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/RobinPersonliga.html");     
-
-
     }) 
+
+    $("#mattias").click(function(){
+        $("#bottom").empty();
+        $("#bottom").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/RobinPersonliga.html");     
+       }) 
+   
+       $("#oskar").click(function(){
+        $("#bottom").empty();
+        $("#bottom").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/RobinPersonliga.html");     
+       }) 
+
+
+      
+
+
+
 
     $("#overlaySpotify").click(function(){
         $("#spotifyText").fadeIn(1500);
