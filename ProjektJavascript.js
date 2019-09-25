@@ -1,5 +1,5 @@
 $(document).ready(function(){
-       
+ $("#profilbild").fadeOut(1000);       
 
     $("#robin").click(function(){                          
     $("#robin").removeClass("fornamn");                     //Funktion för att få understruket namn
@@ -8,7 +8,7 @@ $(document).ready(function(){
      $("#robin").addClass("selected");   
      $("#bottom").empty();
      $("#bottom").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/RobinPersonliga.html");     
-     
+        
     })
 
 
