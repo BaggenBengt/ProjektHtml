@@ -7,7 +7,7 @@ $(document).ready(function(){
     $("#mattias, #oskar, #alla").addClass("fornamn")        // Gäller 4 första funktionerna
      $("#robin").addClass("selected");   
      $("#bottom").empty();
-     $("#bottom").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/RobinPersonliga.html");     
+     $("#bottom").hide().load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/RobinPersonliga.html").fadeIn(1000);     
     })
 
 
@@ -17,7 +17,7 @@ $(document).ready(function(){
         $("#robin, #oskar, #alla").removeClass("selected");
         $("#robin, #oskar, #alla").addClass("fornamn")
          $("#mattias").addClass("selected"); 
-        $("#bottom").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/MattiasPersonliga.html");     
+        $("#bottom").hide().load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/MattiasPersonliga.html").fadeIn(1000);     
        }) 
    
        $("#oskar").click(function(){
@@ -26,7 +26,7 @@ $(document).ready(function(){
         $("#mattias, #robin, #alla").removeClass("selected");
         $("#mattias, #robin, #alla").addClass("fornamn")
          $("#oskar").addClass("selected"); 
-        $("#bottom").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/OskarPersonliga.html");     
+        $("#bottom").hide().load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/OskarPersonliga.html").fadeIn(1000);     
        }) 
 
 
