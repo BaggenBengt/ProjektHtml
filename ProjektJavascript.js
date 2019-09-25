@@ -36,7 +36,7 @@ $(document).ready(function(){
         $("#mattias, #robin, #oskar").removeClass("selected");
         $("#mattias, #robin, #oskar").addClass("fornamn")
          $("#alla").addClass("selected"); 
-         $("#bottomOmOss").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/ProjektOmoss.html #bottom");
+         $("#bottomOmOss").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/ProjektOmoss.html #bottomOmOss");
          
        })
 
