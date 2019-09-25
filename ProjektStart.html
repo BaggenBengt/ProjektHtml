@@ -4,24 +4,43 @@
         <meta charset="utf-8">
         <title>Start sida</title>
         <link rel="stylesheet" href="Projektcss.css">
+        <script src="https://code.jquery.com/jquery-latest.js"> type ="text/javascript"</script>
+
         </head>
             <body>
-                <div id="menybar">
-                    <ul id="menyLista">
-                        <li class="lista"><a href="ProjektStart.html">Startsida</a></li>
-                        <li class="lista"> <a href="ProjektPortfolio.html">Portfolio</a></li>
-                        <li class="lista">Projekt</li>
-                        <li class="lista">Om oss</li>
+                <!--Navigation baren som är högst uppe på sidan-->                
+                <nav id="nav">
+                    <div class ="loggan">
+                       
+                        <h3>Grupp 20!</h3>
+                    </div>
+
+                    <ul class="meny">
+                        <li class="menyLista" > <a href="#">Hem</a></li>
+                        <li class="menyLista"> <a href="#">Portfolie</a> </li>
+                        <li class="menyLista"> <a href="#">Kontakta oss</a> </li>
+                        <li class="menyLista"> <a href="#">Om oss</a> </li>
                     </ul>
-                </div>
+            <!--"Hamburgaren som bara syns i mobil form!"-->     
+                    <div class="scrollLista">
+                    <div class="lager1"></div>
+                    <div class="lager2"></div>
+                    <div class="lager3"></div>
+                   </div>
 
-                <div id="bigFrame">
+                </nav>
+   
+                    <div id="bottom">
+                       
+                    <div id="BildSpel">
+                        <img id="imgBildSpel" src="bild1.jpg" alt="något fel">                  
+                    </div>
+                    <input id="spelaBildspel" type="submit" value=" ">             
+                   </div>
 
+                  <!--- Botten Diven har bildvisnings diven plus knappen-->
 
-                </div>
-
-                <script  src="https://code.jquery.com/jquery-latest.js"> </script>
-                <script  src="ProjektJavascript.js"></script>
-
+                    <script type = "text/javascript" src ="ProjektJavascript.js" ></script>
+                                       
             </body>
     </html>
