@@ -2,8 +2,7 @@
 
 #kontaktHuvudDiv{
     width: 100%;
-    height: 100%;
-    position: fixed;
+    height: 85%;
     overflow-y:scroll;
     overflow-x:hidden;
     background-color: black;

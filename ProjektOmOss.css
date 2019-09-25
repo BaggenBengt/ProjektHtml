@@ -16,28 +16,6 @@ body, html {
     
     
 
-    #menybar{
-    height: 15%;
-    width: 100%;
-    background-color: aqua;
-    
-    }
-    
-    
-    #menyLista{
-    overflow: hidden;
-    margin: 0%;
-    
-    }
-    
-    li.lista{
-    display: inline-block;
-    padding: 0.5em;
-    margin-left: 2em;
-    text-align: center;
-    margin-top: 2.5%;
-    }
-
 #bakgrund{
     display: flex;
     height: 100%;

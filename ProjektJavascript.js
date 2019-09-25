@@ -1,5 +1,5 @@
 $(document).ready(function(){
-       
+    
 
     $("#robin").click(function(){                          
     $("#robin").removeClass("fornamn");                     //Funktion för att få understruket namn
@@ -84,10 +84,10 @@ var nav = document.querySelector('.meny');
 
 burger.addEventListener('click',()=>{
     nav.classList.toggle('meny-active');
+    
 });
 }
 navSlide();
-
 
 
 // Funktionen som byter själva bilden!

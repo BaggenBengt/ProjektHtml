@@ -1,44 +1,13 @@
-body, html {
 
-    height: 100%;
-    width: 100%;
-    padding: 0%;
-    margin: 0%;
-    }
-    
-    
-
-    #menybar{
-    height: 15%;
-    width: 100%;
-    background-color: aqua;
-    
-    }
-    
-    
-    #menyLista{
-    overflow: hidden;
-    margin: 0%;
-    
-    }
-    
-    li.lista{
-    display: inline-block;
-    padding: 0.5em;
-    margin-left: 2em;
-    text-align: center;
-    margin-top: 2.5%;
-    }
-
-    
 #portfolio{
 
-    height: 100%;
+    height: 85%;
     width: 100%;
     background-color: black;
     
     
     }
+    
 
 .bilderPortfolio{
         display: flex;    
@@ -47,7 +16,6 @@ body, html {
         object-fit: contain;
         float: left;                /* Egenskaperna om bilderna */
         margin-top: 5%;
-        position: relative;
         margin-left: 30%;
         border-radius: 50%;
         
@@ -57,15 +25,14 @@ body, html {
         width: 100%;
         height: 100%;
         background-color: black;    /* övre divven*/
-        position: relative;  
+        
         }
         
         #bottomPortfolio{
         width: 100%;
         height: 100%;                    /* nedre divven */
         background-color: black;
-        position: relative;
-      
+        
         }
 
         .textPortfolio{
@@ -73,7 +40,7 @@ body, html {
         margin: 0px;    
         margin-top: 6%;            /*Egenskaperna för Texten om projekten */
         padding: 2px;
-        position: relative;
+        
         float: left;
         color: white;
         margin-left: 10%;
@@ -118,6 +85,8 @@ body, html {
                                 annars syns texten då man backa från en sida*/
         } 
 
+        
+
         @media (min-width: 768px) {  /* Gör om storlek när skärmen blir större */
             .bilderPortfolio{   
                 width: 15%; 
@@ -148,4 +117,11 @@ body, html {
                     #bottomPortfolio{
                         height: 50%;
                     }
+
+
+
           }
+
+     
+
+
