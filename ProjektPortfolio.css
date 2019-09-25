@@ -3,6 +3,7 @@
     height: 100%;
     width: 100%;  
     }
+    
 
 .bilderPortfolio{
         display: flex;    
@@ -11,7 +12,6 @@
         object-fit: contain;
         float: left;                /* Egenskaperna om bilderna */
         margin-top: 5%;
-        position: relative;
         margin-left: 30%;
         border-radius: 50%;
         
@@ -35,50 +35,15 @@
         margin: 0px;    
         margin-top: 6%;            /*Egenskaperna för Texten om projekten */
         padding: 2px;
-        position: relative;
+        
         float: left;
         color: white;
         margin-left: 10%;
         display: none;
         }
 
-        .overlay {
-        position: absolute;         /* Egenskaperna för overlay divven */
-        display: block;    
-        width: 40%; 
-        height: 50%;
-        object-fit: contain;
-        float: left;
-        margin-top: 5%;
-        opacity: 0;     
-        margin-left: 30%;
-        border-radius: 50%;
-        transition: .5s ease;
-        }
-
-        .textOverlay {
-        color: white;
-        font-size: 20px;                /* Texten ovanför loggan    */
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);           /* Texten hamnar i centrum  i loggan    */
-        text-align: center;
-        opacity: 0;
-            
-        }
-    
-        .textOverlay:hover   { /* Gör texten synlig när man hovrar över loggan*/
-            opacity: 1;
-            
-        }  
-        .overlay:hover{
-            cursor: pointer; 
-            opacity: 1;        /* Gör texten synlig när man hovrar över loggan, 
-                                annars syns texten då man backa från en sida*/
-        } 
+      
+        
 
         @media (min-width: 768px) {  /* Gör om storlek när skärmen blir större */
             .bilderPortfolio{   
@@ -88,12 +53,7 @@
                 
                 }
 
-                .overlay {
-                    width: 15%; 
-                    height: 60%;
-                    margin-left: 20%;
-                    
-                  }
+              
 
                   .textPortfolio{
                     width: 30%;    
@@ -104,10 +64,17 @@
 
                   #topPortfolio{
                     height: 50%;
-            
+                  
                     
                     }
                     #bottomPortfolio{
                         height: 50%;
+                      
                     }
+           
+
           }
+
+     
+
+

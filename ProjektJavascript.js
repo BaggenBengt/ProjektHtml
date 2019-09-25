@@ -1,58 +1,51 @@
 $(document).ready(function(){
-       
+    
 
     $("#robin").click(function(){                          
     $("#robin").removeClass("fornamn");                     //Funktion för att få understruket namn
     $("#mattias, #oskar, #alla").removeClass("selected");   // och loada ny profil på "Om oss" sidan
     $("#mattias, #oskar, #alla").addClass("fornamn")        // Gäller 4 första funktionerna
      $("#robin").addClass("selected");   
-     $("#bottom").empty();
-     $("#bottom").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/RobinPersonliga.html");     
+     $("#bottomOmOss").empty();
+     $("#bottomOmOss").hide().load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/RobinPersonliga.html").fadeIn(1000);     
     })
 
 
     $("#mattias").click(function(){
-        $("#bottom").empty();
+        $("#bottomOmOss").empty();
         $("#mattias").removeClass("fornamn"); 
         $("#robin, #oskar, #alla").removeClass("selected");
         $("#robin, #oskar, #alla").addClass("fornamn")
          $("#mattias").addClass("selected"); 
-        $("#bottom").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/MattiasPersonliga.html");     
+        $("#bottomOmOss").hide().load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/MattiasPersonliga.html").fadeIn(1000);     
        }) 
    
        $("#oskar").click(function(){
-        $("#bottom").empty();
+        $("#bottomOmOss").empty();
         $("#oskar").removeClass("fornamn"); 
         $("#mattias, #robin, #alla").removeClass("selected");
         $("#mattias, #robin, #alla").addClass("fornamn")
          $("#oskar").addClass("selected"); 
-        $("#bottom").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/OskarPersonliga.html");     
+        $("#bottomOmOss").hide().load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/OskarPersonliga.html").fadeIn(1000);     
        }) 
 
 
        $("#alla").click(function(){
-        $("#bottom").empty();
-        $("#bottom").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/ProjektOmoss.html #bottom");
+        $("#bottomOmOss").empty();
         $("#alla").removeClass("fornamn"); 
         $("#mattias, #robin, #oskar").removeClass("selected");
         $("#mattias, #robin, #oskar").addClass("fornamn")
          $("#alla").addClass("selected"); 
+         $("#bottomOmOss").hide().load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/ProjektOmoss.html #bottomOmOss").fadeIn(1000);
          
        })
 
-      
-
-    $("#overlaySpotify").click(function(){
-        $("#spotifyText").fadeIn(1500);
-        })
-        $("#overlayChrome").click(function(){       // När man trycker på logon kommer texten fram
-            $("#chromeText").fadeIn(1500);
-            })
+    
+       $("#spotifyText").fadeIn(1500);
+       $("#chromeText").fadeIn(1500);
+   
 
 
-
-
-      
 
 //Startar och stänger av Timern anropar även funktionen "bytBild()" ----> Knappen "spela bildspel har value " " för att inget ska synas på knappen
 
@@ -84,10 +77,10 @@ var nav = document.querySelector('.meny');
 
 burger.addEventListener('click',()=>{
     nav.classList.toggle('meny-active');
+    
 });
 }
 navSlide();
-
 
 
 // Funktionen som byter själva bilden!
