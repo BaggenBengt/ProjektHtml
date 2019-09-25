@@ -52,7 +52,7 @@ $(document).ready(function(){
 
 
 
-      });
+      
 
 //Startar och stänger av Timern anropar även funktionen "bytBild()" ----> Knappen "spela bildspel har value " " för att inget ska synas på knappen
 
