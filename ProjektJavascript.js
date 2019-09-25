@@ -36,23 +36,16 @@ $(document).ready(function(){
         $("#mattias, #robin, #oskar").removeClass("selected");
         $("#mattias, #robin, #oskar").addClass("fornamn")
          $("#alla").addClass("selected"); 
-         $("#bottomOmOss").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/ProjektOmoss.html #bottomOmOss");
+         $("#bottomOmOss").hide().load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/ProjektOmoss.html #bottomOmOss").fadeIn(1000);
          
        })
 
-      
-
-    $("#overlaySpotify").click(function(){
-        $("#spotifyText").fadeIn(1500);
-        })
-        $("#overlayChrome").click(function(){       // När man trycker på logon kommer texten fram
-            $("#chromeText").fadeIn(1500);
-            })
+    
+       $("#spotifyText").fadeIn(1500);
+       $("#chromeText").fadeIn(1500);
+   
 
 
-
-
-      
 
 //Startar och stänger av Timern anropar även funktionen "bytBild()" ----> Knappen "spela bildspel har value " " för att inget ska synas på knappen
 
