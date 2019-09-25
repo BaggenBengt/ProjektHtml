@@ -26,6 +26,7 @@
         margin-top: 1%;
         padding: 2%;
         border-radius: 1em;
+
     }
     
 }
@@ -60,7 +61,6 @@ span
     height: 4em;
     background-color: rgba(115, 185, 115, 0.815);
     font-weight: bold;
-    color: white;
    
 
 }
@@ -73,11 +73,9 @@ span
 #h3Kontakt{
     text-align: center;
     margin-top: 0;
-    color: white;
 }
 
 label{
-    color: white;
     margin-bottom: 1%;
 }
 
@@ -109,7 +107,6 @@ span {
     box-shadow: none;
     border-bottom: 0.1em solid white;
     background-color: rgb(87, 85, 85);
-    color: white;
     outline: none;
     
 }

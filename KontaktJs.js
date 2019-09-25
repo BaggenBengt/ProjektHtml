@@ -66,7 +66,7 @@ function formValidate(){
         validMeddelande = true;
         }
 
-    if (!/^\S+$/.test(($('#meddelande').val()))){
+    if (!/^\S+/.test(($('#meddelande').val()))){
         $('#spanMeddelande').removeClass('hideForm');
         $('#meddelande').removeClass('valid');
         validMeddelande = false;

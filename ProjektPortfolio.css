@@ -1,17 +1,7 @@
-html, body{
-
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
 #portfolio{
 
-    height: 85%;
-    width: 100%;
-    background-color: black;
-    
-    
+    height: 100%;
+    width: 100%;  
     }
     
 
@@ -29,16 +19,14 @@ box-sizing: border-box;
 
     #topPortfolio{
         width: 100%;
-        height: 100%;
-        background-color: black;    /* övre divven*/
-        
+        height: 100%;    /* övre divven*/
+ 
         }
         
         #bottomPortfolio{
         width: 100%;
         height: 100%;                    /* nedre divven */
-        background-color: black;
-        
+      
         }
 
         .textPortfolio{
