@@ -6,37 +6,37 @@ $(document).ready(function(){
     $("#mattias, #oskar, #alla").removeClass("selected");   // och loada ny profil på "Om oss" sidan
     $("#mattias, #oskar, #alla").addClass("fornamn")        // Gäller 4 första funktionerna
      $("#robin").addClass("selected");   
-     $("#bottom").empty();
-     $("#bottom").hide().load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/RobinPersonliga.html").fadeIn(1000);     
+     $("#bottomOmOss").empty();
+     $("#bottomOmOss").hide().load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/RobinPersonliga.html").fadeIn(1000);     
     })
 
 
     $("#mattias").click(function(){
-        $("#bottom").empty();
+        $("#bottomOmOss").empty();
         $("#mattias").removeClass("fornamn"); 
         $("#robin, #oskar, #alla").removeClass("selected");
         $("#robin, #oskar, #alla").addClass("fornamn")
          $("#mattias").addClass("selected"); 
-        $("#bottom").hide().load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/MattiasPersonliga.html").fadeIn(1000);     
+        $("#bottomOmOss").hide().load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/MattiasPersonliga.html").fadeIn(1000);     
        }) 
    
        $("#oskar").click(function(){
-        $("#bottom").empty();
+        $("#bottomOmOss").empty();
         $("#oskar").removeClass("fornamn"); 
         $("#mattias, #robin, #alla").removeClass("selected");
         $("#mattias, #robin, #alla").addClass("fornamn")
          $("#oskar").addClass("selected"); 
-        $("#bottom").hide().load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/OskarPersonliga.html").fadeIn(1000);     
+        $("#bottomOmOss").hide().load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/OskarPersonliga.html").fadeIn(1000);     
        }) 
 
 
        $("#alla").click(function(){
-        $("#bottom").empty();
+        $("#bottomOmOss").empty();
         $("#alla").removeClass("fornamn"); 
         $("#mattias, #robin, #oskar").removeClass("selected");
         $("#mattias, #robin, #oskar").addClass("fornamn")
          $("#alla").addClass("selected"); 
-         $("#bottom").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/ProjektOmoss.html #bottom");
+         $("#bottomOmOss").load("https://raw.githubusercontent.com/BaggenBengt/ProjektHtml/Robin/ProjektOmoss.html #bottom");
          
        })
 
