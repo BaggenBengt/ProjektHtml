@@ -1,5 +1,5 @@
 $(document).ready(function(){
-//Startar och stänger av Timern anropar även funktionen "bytBild()" ---->
+//Startar och stänger av Timern anropar även funktionen "bytBild()" ----> Knappen "spela bildspel har value " " för att inget ska synas på knappen
 
 $('#spelaBildspel').click(function(){
     var namn = $('#spelaBildspel').val();
@@ -27,14 +27,10 @@ function navSlide(){
 var burger = document.querySelector('.scrollLista');
 var nav = document.querySelector('.meny');
 
-
 burger.addEventListener('click',()=>{
     nav.classList.toggle('meny-active');
-
 });
-
 }
-
 navSlide();
 
 
@@ -46,7 +42,6 @@ function bytBild(){
     if(image.src.match("bild1.jpg")){
     image.src = "bild2.jpg";
   
-    
     }
     else if (image.src.match("bild2.jpg")){
     image.src = "bild3.jpg";
@@ -56,7 +51,6 @@ function bytBild(){
     }
     else{
     image.src = "bild1.jpg";
-   
     }
     }
 
