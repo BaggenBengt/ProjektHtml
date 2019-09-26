@@ -3,7 +3,6 @@ $(document).ready(function(){
     $('#kontaktForm').slideDown(800);
     getSparadForm();
     formValidate();
-    skickat();
     
 });
 
@@ -15,6 +14,10 @@ $(document).on('keyup keydown',function(){
 
     formValidate();  
   });
+
+$('#submit').on('click', function(){
+    skickat();
+});
 
 
 function formValidate(){
@@ -79,6 +82,7 @@ function formValidate(){
     if (!validNamn || !validEmail ||!validTel ||!validMeddelande){
         $('#submit').addClass('disabled');
     }
+    $('#skickat').addClass('hideForm');
 }
 
 
@@ -107,3 +111,10 @@ function getSparadForm(){
     $('#meddelande').val(formSparad.meddelande);
 }
 
+function skickat(){
+    $('#skickat').removeClass('hideForm');
+    $('#namn').val('');
+    $('#email').val('');
+    $('#tel').val('');
+    $('#meddelande').val('');
+}
