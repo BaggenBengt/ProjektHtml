@@ -137,3 +137,9 @@ span {
 {
     border-bottom: 0.1em solid rgba(115, 185, 115, 0.815);
 }
+
+#skickat{
+    color: rgba(115, 185, 115, 0.815);
+    margin-left: 7%;
+    font-weight: bold;
+}
